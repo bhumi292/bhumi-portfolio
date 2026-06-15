@@ -1,17 +1,68 @@
-function Navbar() {
-  return (
-     <nav className="bg-slate-950 text-white px-8 py-5 flex justify-between items-center sticky top-0">
-      <h1 className="text-2xl font-bold">
-        Bhumi.dev
-      </h1>
+import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 
-      <ul className="hidden md:flex gap-8">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const navLinks = [
+    "Home",
+    "About",
+    "Skills",
+    "Projects",
+    "Contact",
+  ];
+
+  return (
+    <nav className="fixed top-0 left-0 w-full bg-black shadow z-50 text-white text-sm">
+      <div className="max-w-7xl mx-auto px-6">
+
+        {/* Desktop Navbar */}
+        <div className="h-14 flex items-center justify-center">
+
+          <ul className="hidden md:flex items-center gap-10 font-medium">
+            {navLinks.map((link) => (
+              <li key={link}>
+                <a
+                  href={`#${link.toLowerCase()}`}
+                  className="hover:text-blue-600 transition"
+                >
+                  {link}
+                </a>
+              </li>
+            ))}
+          </ul>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden ml-auto text-xl"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            {menuOpen ? <FaTimes /> : <FaBars />}
+          </button>
+
+        </div>
+      </div>
+
+      {/* Mobile Menu */}
+      <div
+        className={`md:hidden bg-white overflow-hidden transition-all duration-300 ${
+          menuOpen ? "max-h-64 py-4" : "max-h-0"
+        }`}
+      >
+        <ul className="flex flex-col items-center gap-4">
+          {navLinks.map((link) => (
+            <li key={link}>
+              <a
+                href={`#${link.toLowerCase()}`}
+                onClick={() => setMenuOpen(false)}
+                className="hover:text-blue-600"
+              >
+                {link}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </nav>
   );
 }
