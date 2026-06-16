@@ -45,7 +45,7 @@ function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden bg-white overflow-hidden transition-all duration-300 ${
+        className={`md:hidden bg-black overflow-hidden transition-all duration-300 ${
           menuOpen ? "max-h-64 py-4" : "max-h-0"
         }`}
       >
