@@ -1,35 +1,31 @@
+const skills = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React",
+  "Tailwind CSS",
+  "Git",
+  "GitHub",
+  "REST API",
+];
+
 function Skills() {
-
-  const skills = [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "React",
-    "Tailwind CSS",
-    "Git",
-    "GitHub"
-  ];
-
   return (
-    <section id="skills" className="bg-gray-100 py-20 px-8">
-
-      <h2 className="text-4xl font-bold text-center">
+    <section id="skills" className="py-20 px-6">
+      <h2 className="text-4xl font-bold text-center mb-10">
         Skills
       </h2>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10 max-w-5xl mx-auto">
-
-        {skills.map((skill) => (
+      <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6">
+        {skills.map((skill, index) => (
           <div
-            key={skill}
-            className="bg-white p-6 text-center rounded-lg shadow"
+            key={index}
+            className="bg-white shadow p-5 rounded-lg text-center hover:scale-105 duration-300"
           >
             {skill}
           </div>
         ))}
-
       </div>
-
     </section>
   );
 }
