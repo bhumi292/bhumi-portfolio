@@ -1,56 +1,56 @@
+const projects = [
+  {
+    title: "Music App",
+    description: "React Music Player",
+  },
+  {
+    title: "Weather App",
+    description: "Weather API Project",
+  },
+  {
+    title: "Portfolio",
+    description: "Personal Portfolio Website",
+  },
+];
+
 function Projects() {
-
-  const projects = [
-    {
-      id: 1,
-      title: "Music App",
-      desc: "React music player application."
-    },
-    {
-      id: 2,
-      title: "Weather App",
-      desc: "Weather API project."
-    },
-    {
-      id: 3,
-      title: "Todo App",
-      desc: "Task management application."
-    }
-  ];
-
   return (
-    <section id="projects" className="py-20 px-8">
-
-      <h2 className="text-4xl font-bold text-center">
+    <section
+      id="projects"
+      className="bg-gray-100 py-20 px-6"
+    >
+      <h2 className="text-4xl font-bold text-center mb-10">
         Projects
       </h2>
 
-      <div className="grid md:grid-cols-3 gap-8 mt-12">
-
-        {projects.map((project) => (
-
+      <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
+        {projects.map((project, index) => (
           <div
-            key={project.id}
-            className="shadow-lg rounded-lg p-6"
+            key={index}
+            className="bg-white p-6 rounded-lg shadow"
           >
-            <h3 className="text-2xl font-semibold">
+            <div className="h-48 bg-gray-200 rounded mb-4"></div>
+
+            <h3 className="text-xl font-bold mb-2">
               {project.title}
             </h3>
 
-            <p className="mt-3 text-gray-600">
-              {project.desc}
+            <p className="text-gray-600 mb-4">
+              {project.description}
             </p>
 
-            <button className="mt-5 bg-blue-600 text-white px-4 py-2 rounded">
-              View Project
-            </button>
+            <div className="flex gap-3">
+              <button className="bg-blue-600 text-white px-4 py-2 rounded">
+                Demo
+              </button>
 
+              <button className="border px-4 py-2 rounded">
+                GitHub
+              </button>
+            </div>
           </div>
-
         ))}
-
       </div>
-
     </section>
   );
 }
