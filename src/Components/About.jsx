@@ -5,7 +5,7 @@ function About() {
   return (
     <section
       id="about"
-      className="scroll-mt-14 bg-pink-900 text-white py-24 px-6"
+      className="scroll-mt-14 bg-zinc-900 text-white py-24 px-6"
     >
       <div className="max-w-6xl mx-auto">
 

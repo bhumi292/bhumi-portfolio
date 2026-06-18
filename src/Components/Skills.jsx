@@ -21,11 +21,11 @@ function Skills() {
         Skills
       </h2>
 
-      <div className="grid grid-cols-2 md:grid-cols-5 gap-6 max-w-5xl mx-auto">
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-6 max-w-5xl mx-auto ">
         {skills.map((skill) => (
           <div
             key={skill.name}
-            className="bg-zinc-900 p-6 rounded-xl text-center"
+            className="bg-zinc-900 p-6 rounded-xl text-center border border-zinc-800 hover:border-pink-500 transition"
           >
             <div className="text-4xl mb-4">
               {skill.icon}

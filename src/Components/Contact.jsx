@@ -1,33 +1,41 @@
 function Contact() {
   return (
-    <section id="contact" className="py-20 px-6">
-      <h2 className="text-4xl font-bold text-center mb-10">
-        Contact Me
-      </h2>
+    <section
+      id="contact"
+      className="bg-black text-white py-24 px-6"
+    >
+      <div className="max-w-5xl mx-auto text-center">
+        <h2 className="text-4xl font-bold mb-4">
+          Get In Touch
+        </h2>
 
-      <form className="max-w-xl mx-auto space-y-4">
-        <input
-          type="text"
-          placeholder="Name"
-          className="w-full border p-3 rounded"
-        />
+        <p className="text-gray-400 mb-12">
+          Feel free to reach out for opportunities or collaboration.
+        </p>
 
-        <input
-          type="email"
-          placeholder="Email"
-          className="w-full border p-3 rounded"
-        />
+        <div className="grid md:grid-cols-3 gap-6 ">
+          <div className="bg-zinc-900 p-6 rounded-xl border border-zinc-800 hover:border-pink-500 transition">
+            <h3 className="font-semibold mb-2">Email</h3>
+            <p className="text-gray-400">
+              bhumi@example.com
+            </p>
+          </div>
 
-        <textarea
-          rows="5"
-          placeholder="Message"
-          className="w-full border p-3 rounded"
-        ></textarea>
+          <div className="bg-zinc-900 p-6 rounded-xl border border-zinc-800 hover:border-pink-500 transition">
+            <h3 className="font-semibold mb-2">LinkedIn</h3>
+            <p className="text-gray-400">
+              linkedin.com/in/bhumi
+            </p>
+          </div>
 
-        <button className="bg-blue-600 text-white px-6 py-3 rounded">
-          Send Message
-        </button>
-      </form>
+          <div className="bg-zinc-900 p-6 rounded-xl border border-zinc-800 hover:border-pink-500 transition">
+            <h3 className="font-semibold mb-2">GitHub</h3>
+            <p className="text-gray-400">
+              github.com/bhumi
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
