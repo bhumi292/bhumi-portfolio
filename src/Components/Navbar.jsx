@@ -13,7 +13,7 @@ function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-black shadow z-50 text-white text-sm">
+    <nav className="fixed top-0 left-0 w-full bg-pink-900 shadow z-9999 text-white text-sm">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Desktop Navbar */}

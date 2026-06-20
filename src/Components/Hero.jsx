@@ -5,7 +5,7 @@ function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen bg-black flex items-center px-6"
+      className="min-h-screen bg-black flex items-center px-6 pt-14"
     >
       <div className="max-w-6xl mx-auto w-full">
 
