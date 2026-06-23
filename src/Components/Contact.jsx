@@ -2,7 +2,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="bg-black text-white py-24 px-6"
+      className="bg-zinc-900 text-white py-24 px-6"
     >
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-4">

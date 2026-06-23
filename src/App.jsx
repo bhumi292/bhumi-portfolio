@@ -1,5 +1,6 @@
 import About from "./Components/About";
 import Contact from "./Components/Contact";
+import Education from "./Components/Education";
 import Footer from "./Components/Footer";
 import Hero from "./Components/Hero";
 import Navbar from "./Components/Navbar";
@@ -16,6 +17,7 @@ function App() {
       <Hero/> 
       <About/>
       <Skills/>
+      <Education/>
       <Projects/>
       <Contact/>
       <Footer/>

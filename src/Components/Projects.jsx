@@ -19,7 +19,7 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="bg-zinc-900 text-white py-24 px-6 scroll-mt-14"
+      className="bg-black text-white py-24 px-6 scroll-mt-14"
     >
       <h2 className="text-4xl font-bold text-center mb-12">
         Projects
