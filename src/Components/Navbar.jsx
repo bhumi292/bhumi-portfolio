@@ -35,11 +35,11 @@ function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden ml-auto text-xl text-white"
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
-            {menuOpen ? <FaTimes /> : <FaBars />}
-          </button>
+  className="md:hidden ml-auto text-3xl text-white z-9999 relative"
+  onClick={() => setMenuOpen(!menuOpen)}
+>
+  {menuOpen ? <FaTimes /> : <FaBars />}
+</button>
 
         </div>
       </div>

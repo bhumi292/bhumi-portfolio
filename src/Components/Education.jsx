@@ -12,7 +12,7 @@ function Education() {
         <div className="relative border-l-2 border-pink-600">
 
           <div className="ml-8 mb-12 relative">
-            <div className="absolute -left-[41px] top-2 w-4 h-4 bg-pink-600 rounded-full"></div>
+            <div className="absolute -left-41px top-2 w-4 h-4 bg-pink-600 rounded-full"></div>
 
             <p className="text-pink-500 font-semibold">
               2024
@@ -28,7 +28,7 @@ function Education() {
           </div>
 
           <div className="ml-8 relative">
-            <div className="absolute -left-[41px] top-2 w-4 h-4 bg-pink-600 rounded-full"></div>
+            <div className="absolute -left-41px top-2 w-4 h-4 bg-pink-600 rounded-full"></div>
 
             <p className="text-pink-500 font-semibold">
               2021
