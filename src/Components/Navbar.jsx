@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -35,10 +35,9 @@ function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-  className="md:hidden ml-auto text-3xl text-white z-9999 relative"
-  onClick={() => setMenuOpen(!menuOpen)}
+  className="md:hidden ml-auto text-xl text-white"
 >
-  {menuOpen ? <FaTimes /> : <FaBars />}
+  MENU
 </button>
 
         </div>
