@@ -15,7 +15,7 @@ function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-pink-900 shadow z-9999 text-white text-sm">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6">
 
         {/* Desktop Navbar */}
         <div className="h-14 flex items-center justify-center">
