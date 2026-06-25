@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { FaBars, FaTimes } from "react-icons/fa";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,56 +14,33 @@ function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-pink-900 shadow z-9999 text-white text-sm">
-      <div className="max-w-6xl mx-auto px-6">
+    <nav className="fixed top-0 left-0 w-full bg-pink-900 shadow z-[9999] text-white text-sm">
+  <div className="w-full px-4 md:px-6">
 
-        {/* Desktop Navbar */}
-        <div className="h-14 flex items-center justify-center">
+    <div className="h-14 flex items-center justify-center">
 
-          <ul className="hidden md:flex items-center gap-10 font-medium">
-            {navLinks.map((link) => (
-              <li key={link}>
-                <a
-                  href={`#${link.toLowerCase()}`}
-                  className="hover:text-blue-600 transition"
-                >
-                  {link}
-                </a>
-              </li>
-            ))}
-          </ul>
+      <ul className="hidden md:flex items-center gap-10 font-medium">
+        ...
+      </ul>
 
-          {/* Mobile Menu Button */}
-          <button
-  className="md:hidden ml-auto text-xl text-white"
->
-  MENU
-</button>
-
-        </div>
-      </div>
-
-      {/* Mobile Menu */}
-      <div
-        className={`md:hidden bg-black overflow-hidden transition-all duration-300 ${
-          menuOpen ? "max-h-64 py-4" : "max-h-0"
-        }`}
+      <button
+        className="md:hidden ml-auto text-3xl text-white relative z-[9999]"
+        onClick={() => setMenuOpen(!menuOpen)}
       >
-        <ul className="flex flex-col items-center gap-4">
-          {navLinks.map((link) => (
-            <li key={link}>
-              <a
-                href={`#${link.toLowerCase()}`}
-                onClick={() => setMenuOpen(false)}
-                className="hover:text-blue-600"
-              >
-                {link}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </nav>
+        {menuOpen ? <FaTimes /> : <FaBars />}
+      </button>
+
+    </div>
+  </div>
+
+  <div
+    className={`md:hidden bg-pink-900 overflow-hidden transition-all duration-300 ${
+      menuOpen ? "max-h-64 py-4" : "max-h-0"
+    }`}
+  >
+    ...
+  </div>
+</nav>
   );
 }
 
