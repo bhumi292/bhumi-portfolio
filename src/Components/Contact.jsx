@@ -13,25 +13,32 @@ function Contact() {
           Feel free to reach out for opportunities or collaboration.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-6 ">
-          <div className="bg-zinc-900 p-6 rounded-xl border border-zinc-800 hover:border-pink-500 transition">
+        <div className="grid md:grid-cols-4 gap-6 ">
+          <div className="bg-zinc-900 p-6 rounded-xl border border-zinc-1000 hover:border-pink-700 transition">
             <h3 className="font-semibold mb-2">Email</h3>
             <p className="text-gray-400">
               bhumi@example.com
             </p>
           </div>
 
-          <div className="bg-zinc-900 p-6 rounded-xl border border-zinc-800 hover:border-pink-500 transition">
+          <div className="bg-zinc-900 p-6 rounded-xl border border-zinc-1000 hover:border-pink-500 transition">
             <h3 className="font-semibold mb-2">LinkedIn</h3>
             <p className="text-gray-400">
               linkedin.com/in/bhumi
             </p>
           </div>
 
-          <div className="bg-zinc-900 p-6 rounded-xl border border-zinc-800 hover:border-pink-500 transition">
+          <div className="bg-zinc-900 p-6 rounded-xl border border-zinc-1000 hover:border-pink-500 transition">
             <h3 className="font-semibold mb-2">GitHub</h3>
             <p className="text-gray-400">
               github.com/bhumi
+            </p>
+          </div>
+
+           <div className="bg-zinc-900 p-6 rounded-xl border border-zinc-1000 hover:border-pink-500 transition">
+            <h3 className="font-semibold mb-2">Phone </h3>
+            <p className="text-gray-400">
+              1234567896
             </p>
           </div>
         </div>
