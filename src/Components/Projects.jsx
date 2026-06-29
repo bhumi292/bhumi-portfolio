@@ -11,7 +11,7 @@ const projects = [
     description:
       "Personal portfolio showcasing my skills, projects and frontend development journey.",
     technologies: ["React", "Tailwind CSS", "Framer Motion"],
-    Github: "https://bhumi292.github.io/react-sound-effects-library/",
+    Github: "https://bhumi292.github.io/bhumi-portfolio/",
   },
 ];
 
@@ -54,11 +54,11 @@ function Projects() {
             {/* Buttons */}
             <div className="flex gap-4">
               <a
-  href={project.Github}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="px-5 py-2 border border-gray-500 rounded-lg hover:bg-zinc-800"
->
+                href={project.Github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-5 py-2 border border-gray-500 rounded-lg hover:bg-zinc-800"
+              >
   GitHub
 </a>
             </div>

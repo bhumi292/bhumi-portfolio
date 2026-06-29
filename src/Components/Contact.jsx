@@ -13,11 +13,11 @@ function Contact() {
           Feel free to reach out for opportunities or collaboration.
         </p>
 
-        <div className="grid md:grid-cols-4 gap-6 ">
+        <div className="grid lg:grid-cols-4 gap-6 ">
           <div className="bg-zinc-900 p-6 rounded-xl border border-zinc-1000 hover:border-pink-700 transition">
             <h3 className="font-semibold mb-2">Email</h3>
             <p className="text-gray-400">
-              bhumi@example.com
+              dolariyabhumi29@gmail.com
             </p>
           </div>
 
@@ -31,14 +31,14 @@ function Contact() {
           <div className="bg-zinc-900 p-6 rounded-xl border border-zinc-1000 hover:border-pink-500 transition">
             <h3 className="font-semibold mb-2">GitHub</h3>
             <p className="text-gray-400">
-              github.com/bhumi
+              https://github.com/bhumi292
             </p>
           </div>
 
            <div className="bg-zinc-900 p-6 rounded-xl border border-zinc-1000 hover:border-pink-500 transition">
             <h3 className="font-semibold mb-2">Phone </h3>
             <p className="text-gray-400">
-              1234567896
+              8469201473
             </p>
           </div>
         </div>

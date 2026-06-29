@@ -18,10 +18,10 @@ function Hero() {
             transition={{ duration: 1 }}
           >
             <img
-  src={profileImg}
-  alt="Bhumi Dolariya"
-  className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-white shadow-[0_0_40px_rgba(168,85,247,0.8)]"
-/>
+              src={profileImg}
+              alt="Bhumi Dolariya"
+              className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-white shadow-[0_0_40px_rgba(168,85,247,0.8)]"
+            />
           </motion.div>
 
           {/* Content */}
@@ -40,9 +40,20 @@ function Hero() {
               Frontend Developer
             </h2>
 
-            <button className="mt-8 px-8 py-3 bg-white text-black font-semibold rounded-full hover:scale-105 transition duration-300">
-              Get In Touch
-            </button>
+            <a
+              href="#contact"
+              className="inline-block mt-8 px-8 py-3 bg-white text-black font-semibold rounded-full hover:scale-105 transition duration-300"
+            >
+            Get In Touch
+            </a>
+            <a
+               href="/resume.pdf"
+              target="_blank"
+               rel="noopener noreferrer"
+              className="inline-block mt-8 px-8 py-3 bg-white text-black font-semibold rounded-full hover:scale-105 transition duration-300"
+            >
+            Download Resume
+            </a>
           </motion.div>
 
         </div>
